@@ -30,3 +30,4 @@ sed -i 's|^PKG_SOURCE_URL.*|PKG_SOURCE_URL=https://github.com/qwerttvv/Router.gi
 sed -i 's|^PKG_MIRROR_HASH.*|PKG_MIRROR_HASH:=skip|g' package/network/services/omcproxy/Makefile
 sed -i 's|^PKG_SOURCE_VERSION.*|PKG_SOURCE_VERSION:=omcproxy|g' package/network/services/omcproxy/Makefile
 
+sed -i 's/KERNEL_PATCHVER:=6.6/KERNEL_PATCHVER:=6.12/g' ./target/linux/qualcommax/Makefile

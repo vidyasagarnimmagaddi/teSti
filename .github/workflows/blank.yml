@@ -26,7 +26,7 @@ on:
 
 env:
   REPO_URL: https://github.com/VIKINGYFY/immortalwrt
-  REPO_BRANCH: test
+  REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: config-IPQ60xx.cfg
   DIY_P1_SH: diy-part1-IPQ60xx.sh

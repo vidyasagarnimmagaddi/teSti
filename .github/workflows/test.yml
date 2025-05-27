@@ -6,7 +6,7 @@ on:
 jobs:
 
   windows:
-    runs-on: windows-2025
+    runs-on: windows-2022
     steps:
       - name: Delete releases and workflows runs
         uses: ophub/delete-releases-workflows@main

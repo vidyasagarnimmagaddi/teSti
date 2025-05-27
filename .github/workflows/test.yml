@@ -1,4 +1,4 @@
-name: ${{ github.action_path }}
+name: test
 
 on:
   workflow_dispatch:
@@ -7,11 +7,11 @@ jobs:
   ubuntu:
     runs-on: ubuntu-24.04
     steps:
-      - name: cd ${{ github.action_path }}
+      - name: ubuntu
         run: cd ${{ github.action_path }}
 
   windows:
     runs-on: windows-2025
     steps:
-      - name: cd ${{ github.action_path }}
+      - name: windows
         run: cd ${{ github.action_path }}

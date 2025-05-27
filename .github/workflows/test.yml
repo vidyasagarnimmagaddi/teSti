@@ -4,14 +4,16 @@ on:
   workflow_dispatch:
 
 jobs:
-  ubuntu:
-    runs-on: ubuntu-24.04
-    steps:
-      - name: ubuntu
-        run: cd ${{ github.action_path }}
 
   windows:
     runs-on: windows-2025
     steps:
-      - name: windows
-        run: cd ${{ github.action_path }}
+      - name: Delete releases and workflows runs
+        uses: ophub/delete-releases-workflows@main
+        with:
+          delete_releases: true
+          releases_keep_latest: 99
+          delete_tags: true
+          delete_workflows: true
+          workflows_keep_day: 66
+          gh_token: ${{ secrets.GITHUB_TOKEN }}
